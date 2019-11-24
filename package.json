@@ -1,0 +1,25 @@
+{
+  "name": "use-svg",
+  "version": "0.1.0",
+  "description": "SVG icons component",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Abdelrahman3D/use-svg.git"
+  },
+  "keywords": [
+    "svg",
+    "icon",
+    "vue",
+    "a11n"
+  ],
+  "author": "abdelrahman3d@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Abdelrahman3D/use-svg/issues"
+  },
+  "homepage": "https://github.com/Abdelrahman3D/use-svg#readme"
+}
