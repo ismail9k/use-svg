@@ -1,10 +1,12 @@
-<template>
+<template functional>
   <svg
     viewBox="0 0 24 24"
     class="icon"
-    :class="styleClasses"
+    :class="$options.methods.getStyleClasses(props)"
+    v-bind="data.attrs"
+    v-on="listeners"
   >
-    <path :d="path" />
+    <path :d="$options.methods.getPath(props)" />
   </svg>
 </template>
 
@@ -18,12 +20,12 @@ export default {
     size: String,
     color: String,
   },
-  computed: {
-    path() {
-      return icons[this.name];
+  methods: {
+    getPath(props) {
+      return icons[props.name];
     },
-    styleClasses() {
-      return [this.size, this.color].map(val => val && `is-${val}`);
+    getStyleClasses(props) {
+      return [props.size, props.color].map(val => val && `is-${val}`);
     },
   },
 };
