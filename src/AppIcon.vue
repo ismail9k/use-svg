@@ -6,6 +6,8 @@
     v-bind="data.attrs"
     v-on="listeners"
   >
+    <title>{{ props.title || props.name }}</title>
+    <desc v-if="props.desc">{{ props.desc }}</desc>
     <path :d="$options.methods.getPath(props)" />
   </svg>
 </template>
@@ -19,6 +21,8 @@ export default {
     name: String,
     size: String,
     color: String,
+    title: String,
+    desc: String,
   },
   methods: {
     getPath(props) {
