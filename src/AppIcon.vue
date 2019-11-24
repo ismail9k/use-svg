@@ -5,6 +5,7 @@
     :class="$options.methods.getStyleClasses(props)"
     v-bind="data.attrs"
     v-on="listeners"
+    role="img"
   >
     <title>{{ props.title || props.name }}</title>
     <desc v-if="props.desc">{{ props.desc }}</desc>
